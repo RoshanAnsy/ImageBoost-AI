@@ -1,27 +1,6 @@
 
 import axios from "axios";
 
-// export async function uploadfile(files: File[]) {
-//     console.log("file received in service", process.env.NEXT_PUBLIC_API_URL);
-
-//     const formData = new FormData();
-//     formData.append("file", files[0]); // Match Go key: "files"
-
-//     const response = await axios.post(
-//         `${process.env.NEXT_PUBLIC_API_URL}/images`,
-//         formData,
-//         {
-//             headers: {
-//                 "Content-Type": "multipart/form-data",
-//                 "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InJvMTJAZ21haWwuY29tIiwiaWQiOjEsInJvbGUiOiJhZG1pbiIsIm5hbWUiOiJyb3NoYW4iLCJpbWFnZSI6bnVsbCwiaWF0IjoxNzY1MTEwMzA2LCJleHAiOjE3NjUxMTc1MDZ9.DEuCHtnCY1EdmkdX5zCgNrUsV4bp4QlSbtzUWsnNdxs"
-//             },
-//             // withCredentials: true,  // MUST be outside headers
-//         }
-//     );
-
-//     console.log("Server response:", response.data);
-//     return response.data;
-// }
 
 
 
