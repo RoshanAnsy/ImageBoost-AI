@@ -8,8 +8,8 @@ const ImageComp = ({finalFileView,loading}:{finalFileView:string,loading:boolean
 
     if (loading === true) {
         return (
-            <div className="flex w-full h-72 items-center justify-center border shadow-md p-2 rounded-md">
-                <Loader className="w-12 h-12 animate-spin text-blue-500" />
+            <div className="flex w-full h-72 items-center justify-center p-2 rounded-md">
+                <Loader className="w-12 h-12 animate-spin " />
             </div>
         );
     }

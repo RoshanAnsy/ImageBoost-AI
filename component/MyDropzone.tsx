@@ -13,7 +13,7 @@ export default function MyDropzone() {
   const [loading,setLoading]=useState<boolean>(false)
 
   const onDrop = useCallback(async (acceptedFiles: File[]) => {
-    setLoading(true)
+    
     const file = acceptedFiles[0];
     if (!file) return;
     // 10 MB = 10 * 1024 * 1024
@@ -29,15 +29,15 @@ export default function MyDropzone() {
     setFilePreview(previewUrl);
     setView(true);
 
-    console.log("Accepted files:", acceptedFiles);
-
     // Upload
+    setLoading(true)
+    setFinalView(true)
    const url= await uploadfile(acceptedFiles);
    
    if(url==null){
     alert("failed to upload image")
    }
-   setFinalView(true)
+   
     SetFinalFileView(url as string)
     setLoading(false)
    
@@ -78,7 +78,7 @@ export default function MyDropzone() {
       )}
 
       {
-        finalView && finalFileView && (<ImageComp finalFileView={finalFileView} loading={loading}/>)
+        finalView && (<ImageComp finalFileView={finalFileView} loading={loading}/>)
       }
       </div>
     </div>
