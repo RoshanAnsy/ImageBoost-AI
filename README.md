@@ -5,6 +5,12 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 First, run the development server:
 
 ```bash
+1. clone the repo
+git clone
+2 install nodemodule packages
+npm install
+3.create .env file and copy past the all varibles from examples.env file
+
 npm run dev
 # or
 yarn dev
